@@ -3,12 +3,12 @@ import Skills from './Skills.js';
 import Tilt from 'react-parallax-tilt';
 import Arif from '../images/arif.png'
 import { FaBitcoin } from 'react-icons/fa';
-import { GrShieldSecurity } from "react-icons/gr";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { DiLinux } from 'react-icons/di';
 import trading from '../images/trading.png'
 import blockchain from '../images/blockchain.png'
 import cyberSecurity from '../images/cyber-security.png'
+import Contact from './Contact/Contact.js';
 const About = () => {
   return (
     <>
@@ -76,6 +76,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Contact />
     </>
   )
 }
