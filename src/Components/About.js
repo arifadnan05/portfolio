@@ -54,7 +54,7 @@ const About = () => {
             </div>
             <div className='interest'>
               <img className='icon-image' src={blockchain} alt="" />
-              <p>Block Chain</p>
+              <p>BlockChain</p>
             </div>
             <div className='interest'>
               <p className='interest-icon'><GiArtificialIntelligence /></p>

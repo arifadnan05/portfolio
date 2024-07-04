@@ -30,7 +30,7 @@ const Home = () => {
           <p>
             I love the process of changing a raw idea into a website or a product 
             that impacts lives. 
-            I want to do work that challenges me as a developer & work that I can 
+            I want to do work that are challenges me as a developer & work that I can 
             be proud of.<br /><br />
             Also, I love Tea
           </p>
