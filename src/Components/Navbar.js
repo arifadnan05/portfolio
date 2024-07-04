@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import {AiOutlineHome} from "react-icons/ai";
 import {BsPerson, BsCodeSlash} from "react-icons/bs";
 import {CgFileDocument} from "react-icons/cg";
+import { MdOutlineContactSupport } from "react-icons/md";
 
 
 const Nav = () => {
@@ -55,6 +56,7 @@ const Nav = () => {
             <li onClick={hideMenu}><NavLink to="/About"><BsPerson/> About</NavLink></li>
             <li onClick={hideMenu}><NavLink to="/Project"><BsCodeSlash/> Project</NavLink></li>
             <li onClick={hideMenu}><NavLink to="/Resume"><CgFileDocument/> Resume</NavLink></li>
+            <li onClick={hideMenu}><NavLink to="/Contact"><MdOutlineContactSupport /> Contact</NavLink></li>
         </ul>
         
     </nav>

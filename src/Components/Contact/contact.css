@@ -4,11 +4,11 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  body {
+  /* body {
     background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
     font-size: 12px;
   }
-  
+   */
   body, button, input {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -23,7 +23,7 @@
   .container {
     flex: 0 1 700px;
     margin: auto;
-    padding: 10px;
+    padding: 90px;
   }
   
   .screen {
@@ -103,6 +103,7 @@
   .screen-body-item.left {
     display: flex;
     flex-direction: column;
+    border-right: 1px solid gray;
   }
   
   .app-title {
@@ -122,6 +123,17 @@
     width: 25px;
     height: 4px;
     background: #ea1d6f;
+  }
+  .app-body{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .app-body-border{
+    text-align: center;
+    margin-top: 15px;
+    border-bottom: 1px solid #666;
+    padding: 5px 90px;
   }
   
   .app-contact {
@@ -205,14 +217,16 @@
     margin: 0 5px;
   }
   
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 700px) {
     .screen-body {
       flex-direction: column;
     }
   
     .screen-body-item.left {
       margin-bottom: 30px;
+      border-right: none;
     }
+
   
     .app-title {
       flex-direction: row;
@@ -235,5 +249,12 @@
     .screen-body-item {
       padding: 0;
     }
+  }
+  @media screen and (max-width: 1024px) {
+    .container {
+        flex: 0 1 700px;
+        margin: auto;
+        padding: 30px;
+      }
   }
   

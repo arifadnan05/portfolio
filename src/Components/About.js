@@ -8,7 +8,6 @@ import { DiLinux } from 'react-icons/di';
 import trading from '../images/trading.png'
 import blockchain from '../images/blockchain.png'
 import cyberSecurity from '../images/cyber-security.png'
-import Contact from './Contact/Contact.js';
 const About = () => {
   return (
     <>
@@ -76,7 +75,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Contact />
     </>
   )
 }
