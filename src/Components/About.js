@@ -16,7 +16,7 @@ const About = () => {
           <h1 className='AboutTextHeading' >Get to <b>know</b> me!</h1>
           <p>
             Hi, my name is <b>Arif Adnan</b> and I am from Rangpur, Bangladesh.
-            I'm a <b>Front End web developer.</b> <br /><br /> I am a skilled front-end developer with a passion for crafting visually appealing and user-friendly web applications. I leverage my expertise in JavaScript, React, CSS, and HTML to deliver dynamic and responsive interfaces. <br /> <br /> Creating intuitive and user-friendly interfaces that meet both user needs and business goals. Implementing secure authentication and data protection protocols. Building responsive web applications that adapt flawlessly to various screen sizes.
+            I'm a <b>Front End web developer.</b> And Degree first year bhurungamari govt collage. <br /><br /> I am a skilled front-end developer with a passion for crafting visually appealing and user-friendly web applications. I leverage my expertise in JavaScript, React, CSS, and HTML to deliver dynamic and responsive interfaces. <br /> <br /> Creating intuitive and user-friendly interfaces that meet both user needs and business goals. Implementing secure authentication and data protection protocols. Building responsive web applications that adapt flawlessly to various screen sizes.
           </p>
         </div>
 

@@ -1,6 +1,9 @@
 import { useRef } from 'react';
 import './contact.css'
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { GrMail } from 'react-icons/gr';
 const Contact = () => {
     const form = useRef();
 
@@ -13,7 +16,11 @@ const Contact = () => {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    Swal.fire({
+                        title: "Awesome!",
+                        text: "Your message was sent successful",
+                        icon: "success"
+                    });
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -49,43 +56,35 @@ const Contact = () => {
                                     <h2>Social Link</h2>
                                 </div>
                                 <div className='app-body-border'></div>
+                                <div className='Contact-style'>
+                                    <div className='footerLinks'>
+                                        <a href="https://github.com/arifadnan05" target='_blank' rel="noreferrer"><FaGithub /></a>
+                                        <a href="https://www.linkedin.com/in/arifadnan05/" target='_blank' rel="noreferrer"><FaLinkedin /></a>
+                                        <a href='mailTo:arifahamedadnan@gmail.com' target='_blank' rel="noreferrer"><GrMail /></a>
+                                    </div>
+                                </div>
                                 <div class="app-contact">Developed by Arif Adnan</div>
                             </div>
                             <div class="screen-body-item">
                                 <div class="app-form">
-                                    {/* <div class="app-form-group">
-                                        <input class="app-form-control" placeholder="NAME" />
-                                    </div>
-                                    <div class="app-form-group">
-                                        <input class="app-form-control" placeholder="EMAIL" />
-                                    </div>
-                                    <div class="app-form-group">
-                                        <input class="app-form-control" placeholder="CONTACT NO" />
-                                    </div>
-                                    <div class="app-form-group message">
-                                        <textarea class="app-form-control" placeholder="MESSAGE" />
-                                    </div>
-                                    <div class="app-form-group buttons">
-                                        <button class="app-form-button">SEND</button>
-                                    </div> */}
 
                                     <form ref={form} onSubmit={sendEmail}>
                                         <div className='app-form-group'>
-                                            <input type="text" name="user_name" className='app-form-control' placeholder='NAME' required/>
+                                            <input type="text" name="user_name" className='app-form-control' placeholder='NAME' required />
                                         </div>
 
                                         <div className='app-form-group'>
-                                            <input type="email" name="user_email" className='app-form-control' placeholder='E-MAIL' required/>
+                                            <input type="email" name="user_email" className='app-form-control' placeholder='E-MAIL' required />
                                         </div>
                                         <div className='app-form-group'>
-                                            <input type="text" name="subject" className='app-form-control' placeholder='SUBJECT' required/>
+                                            <input type="text" name="subject" className='app-form-control' placeholder='SUBJECT' required />
                                         </div>
                                         <div className='app-form-group message'>
-                                            <textarea name="message" className='app-form-control' placeholder='MESSAGE' required/>
+                                            <textarea name="message" className='app-form-control' placeholder='MESSAGE' required />
                                         </div>
 
                                         <div className='app-form-group'>
-                                            <input type="submit" value="Send" className='app-form-button'/>
+                                            <input type="submit" value="Send" className='app-form-button' />
                                         </div>
                                     </form>
                                 </div>
