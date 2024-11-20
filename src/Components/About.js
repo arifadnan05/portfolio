@@ -5,9 +5,9 @@ import Arif from '../images/arif.png'
 import { FaBitcoin } from 'react-icons/fa';
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { DiLinux } from 'react-icons/di';
-import trading from '../images/trading.png'
 import blockchain from '../images/blockchain.png'
 import cyberSecurity from '../images/cyber-security.png'
+import { FaDocker } from 'react-icons/fa6';
 const About = () => {
   return (
     <>
@@ -69,8 +69,8 @@ const About = () => {
               <p>Linux</p>
             </div>
             <div className='interest'>
-              <img className='icon-image' src={trading} alt="" />
-              <p>Trading</p>
+              <p className='interest-icon'><FaDocker /></p>
+              <p>Docker</p>
             </div>
           </div>
         </div>
